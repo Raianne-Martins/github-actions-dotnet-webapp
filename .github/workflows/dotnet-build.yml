@@ -21,10 +21,10 @@ jobs:
           dotnet-version: '8.0.x'  # Atualizado para uma versão suportada
 
       - name: Restaurar dependências
-        run: dotnet restore
+        run: dotnet restore github4women/github4women.csproj
 
       - name: Compilar Projeto
-        run: dotnet build --configuration Release
+        run: dotnet build github4women/github4women.csproj --configuration Release
 
       - name: Executar script e notificar
         run: |
