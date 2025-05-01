@@ -18,7 +18,7 @@ jobs:
       - name: Configurar .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '8.0.x'  # Atualizado para uma versão suportada
+          dotnet-version: '8.0.x' 
 
       - name: Restaurar dependências
         run: dotnet restore github4women/github4women.csproj
